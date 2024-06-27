@@ -18,4 +18,8 @@ public class Customer {
     private String email;
     private String pwd;
     private String role;
+
+    public void setPassword(String pwd) {
+        this.pwd = pwd;
+    }
 }
