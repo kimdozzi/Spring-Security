@@ -1,7 +1,7 @@
-package com.example.springsecuritybasic.controller;
+package com.example.springsecuritybasic.balance.controller;
 
-import com.example.springsecuritybasic.model.AccountTransactions;
-import com.example.springsecuritybasic.repository.AccountTransactionsRepository;
+import com.example.springsecuritybasic.account.domain.AccountTransactions;
+import com.example.springsecuritybasic.account.repository.AccountTransactionsRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

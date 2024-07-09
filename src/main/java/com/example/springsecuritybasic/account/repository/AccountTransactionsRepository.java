@@ -1,6 +1,6 @@
-package com.example.springsecuritybasic.repository;
+package com.example.springsecuritybasic.account.repository;
 
-import com.example.springsecuritybasic.model.AccountTransactions;
+import com.example.springsecuritybasic.account.domain.AccountTransactions;
 import java.util.List;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

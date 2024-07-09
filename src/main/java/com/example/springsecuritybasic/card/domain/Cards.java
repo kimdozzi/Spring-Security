@@ -1,4 +1,4 @@
-package com.example.springsecuritybasic.model;
+package com.example.springsecuritybasic.card.domain;
 
 import java.sql.Date;
 

@@ -1,6 +1,6 @@
-package com.example.springsecuritybasic.repository;
+package com.example.springsecuritybasic.card.repository;
 
-import com.example.springsecuritybasic.model.Cards;
+import com.example.springsecuritybasic.card.domain.Cards;
 import java.util.List;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

@@ -1,7 +1,7 @@
-package com.example.springsecuritybasic.controller;
+package com.example.springsecuritybasic.card.controller;
 
-import com.example.springsecuritybasic.model.Cards;
-import com.example.springsecuritybasic.repository.CardsRepository;
+import com.example.springsecuritybasic.card.domain.Cards;
+import com.example.springsecuritybasic.card.repository.CardsRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,7 +1,7 @@
 package com.example.springsecuritybasic.config;
 
-import com.example.springsecuritybasic.model.Customer;
-import com.example.springsecuritybasic.repository.CustomerRepository;
+import com.example.springsecuritybasic.customer.domain.Customer;
+import com.example.springsecuritybasic.customer.repository.CustomerRepository;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.security.authentication.AuthenticationProvider;

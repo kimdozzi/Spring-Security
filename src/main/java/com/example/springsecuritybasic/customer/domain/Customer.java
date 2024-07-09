@@ -1,4 +1,4 @@
-package com.example.springsecuritybasic.model;
+package com.example.springsecuritybasic.customer.domain;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;

@@ -1,7 +1,7 @@
-package com.example.springsecuritybasic.controller;
+package com.example.springsecuritybasic.loan.controller;
 
-import com.example.springsecuritybasic.model.Loans;
-import com.example.springsecuritybasic.repository.LoanRepository;
+import com.example.springsecuritybasic.loan.domain.Loans;
+import com.example.springsecuritybasic.loan.repository.LoanRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

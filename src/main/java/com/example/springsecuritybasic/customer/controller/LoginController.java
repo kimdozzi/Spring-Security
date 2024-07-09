@@ -1,7 +1,8 @@
-package com.example.springsecuritybasic.controller;
+package com.example.springsecuritybasic.customer.controller;
 
-import com.example.springsecuritybasic.model.Customer;
-import com.example.springsecuritybasic.repository.CustomerRepository;
+import com.example.springsecuritybasic.customer.domain.Customer;
+import com.example.springsecuritybasic.customer.repository.CustomerRepository;
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +31,7 @@ public class LoginController {
         try {
             String hashPwd = passwordEncoder.encode(customer.getPwd());
             customer.setPwd(hashPwd);
-            customer.setCreateDt(String.valueOf(new Date(System.currentTimeMillis())));
+            customer.setCreateDt(String.valueOf(LocalDateTime.now()));
             savedCustomer = customerRepository.save(customer);
             if (savedCustomer.getId() > 0) {
                 response = ResponseEntity

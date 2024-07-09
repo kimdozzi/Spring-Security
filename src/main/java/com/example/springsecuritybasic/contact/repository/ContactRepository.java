@@ -1,6 +1,6 @@
-package com.example.springsecuritybasic.repository;
+package com.example.springsecuritybasic.contact.repository;
 
-import com.example.springsecuritybasic.model.Contact;
+import com.example.springsecuritybasic.contact.domain.Contact;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

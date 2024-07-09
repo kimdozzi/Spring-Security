@@ -1,6 +1,6 @@
-package com.example.springsecuritybasic.repository;
+package com.example.springsecuritybasic.notice.repository;
 
-import com.example.springsecuritybasic.model.Notice;
+import com.example.springsecuritybasic.notice.domain.Notice;
 import java.util.List;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;

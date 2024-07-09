@@ -1,7 +1,7 @@
-package com.example.springsecuritybasic.controller;
+package com.example.springsecuritybasic.notice.controller;
 
-import com.example.springsecuritybasic.model.Notice;
-import com.example.springsecuritybasic.repository.NoticeRepository;
+import com.example.springsecuritybasic.notice.domain.Notice;
+import com.example.springsecuritybasic.notice.repository.NoticeRepository;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.example.springsecuritybasic.model;
+package com.example.springsecuritybasic.account.domain;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

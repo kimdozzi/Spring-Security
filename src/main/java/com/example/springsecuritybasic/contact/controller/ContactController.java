@@ -1,7 +1,7 @@
-package com.example.springsecuritybasic.controller;
+package com.example.springsecuritybasic.contact.controller;
 
-import com.example.springsecuritybasic.model.Contact;
-import com.example.springsecuritybasic.repository.ContactRepository;
+import com.example.springsecuritybasic.contact.domain.Contact;
+import com.example.springsecuritybasic.contact.repository.ContactRepository;
 import java.sql.Date;
 import java.util.Random;
 import org.springframework.beans.factory.annotation.Autowired;
