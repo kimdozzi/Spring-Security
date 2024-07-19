@@ -3,7 +3,6 @@ package com.example.springsecuritybasic.customer.controller;
 import com.example.springsecuritybasic.customer.domain.Customer;
 import com.example.springsecuritybasic.customer.repository.CustomerRepository;
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -16,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class LoginController {
+public class RegisterController {
 
     @Autowired
     private CustomerRepository customerRepository;
