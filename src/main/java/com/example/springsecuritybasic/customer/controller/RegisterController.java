@@ -23,7 +23,7 @@ public class RegisterController {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    @PostMapping("/register")
+    @PostMapping("/api/register")
     public ResponseEntity<String> registerUser(@RequestBody Customer customer) {
         Customer savedCustomer = null;
         ResponseEntity response = null;

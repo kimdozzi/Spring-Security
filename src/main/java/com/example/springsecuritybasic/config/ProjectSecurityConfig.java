@@ -35,28 +35,26 @@ public class ProjectSecurityConfig {
                                 false))
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.ALWAYS));
 
+        // CORS
         http.cors(corsCustomizer ->
-                        corsCustomizer.configurationSource(new CorsConfigurationSource() {
-                            @Override
-                            public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
-                                CorsConfiguration config = new CorsConfiguration();
-                                config.setAllowedOrigins(Collections.singletonList("http://localhost:8081"));
-                                config.setAllowedMethods(Collections.singletonList("*"));
-                                config.setAllowCredentials(true);
-                                config.setAllowedHeaders(Collections.singletonList("*"));
-                                config.setMaxAge(3600L);
-                                return config;
-                            }
+                        corsCustomizer.configurationSource(request -> {
+                            CorsConfiguration config = new CorsConfiguration();
+                            config.setAllowedOrigins(Collections.singletonList("http://localhost:8081"));
+                            config.setAllowedMethods(Collections.singletonList("*"));
+                            config.setAllowCredentials(true);
+                            config.setAllowedHeaders(Collections.singletonList("*"));
+                            config.setMaxAge(3600L);
+                            return config;
                         }))
                 // CSRF
                 .csrf((csrf) -> csrf.csrfTokenRequestHandler(requestHandler)
-                        .ignoringRequestMatchers("/register")
+                        .ignoringRequestMatchers("/api/register")
                         .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse()))
                 .addFilterAfter(new CsrfCookieFilter(), BasicAuthenticationFilter.class)
 
                 .authorizeHttpRequests((requests) ->
-                        requests.requestMatchers( "/myLoans", "/notices").authenticated()
-                                .requestMatchers("/contact", "/register").permitAll()
+                        requests.requestMatchers( "/api/myLoans", "/api/notices").authenticated()
+                                .requestMatchers("/api/contact", "/api/register").permitAll()
                 );
         http.formLogin(Customizer.withDefaults());
         http.httpBasic(Customizer.withDefaults());
