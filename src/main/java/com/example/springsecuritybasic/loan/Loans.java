@@ -1,4 +1,4 @@
-package com.example.springsecuritybasic.loan.domain;
+package com.example.springsecuritybasic.loan;
 
 import java.sql.Date;
 

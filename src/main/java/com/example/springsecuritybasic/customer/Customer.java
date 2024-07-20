@@ -1,4 +1,4 @@
-package com.example.springsecuritybasic.customer.domain;
+package com.example.springsecuritybasic.customer;
 
 import com.example.springsecuritybasic.security.Authority;
 import com.fasterxml.jackson.annotation.JsonIgnore;

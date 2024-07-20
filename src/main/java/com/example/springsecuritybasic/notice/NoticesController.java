@@ -1,7 +1,5 @@
-package com.example.springsecuritybasic.notice.controller;
+package com.example.springsecuritybasic.notice;
 
-import com.example.springsecuritybasic.notice.domain.Notice;
-import com.example.springsecuritybasic.notice.repository.NoticeRepository;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +14,7 @@ public class NoticesController {
     @Autowired
     private NoticeRepository noticeRepository;
 
-    @GetMapping("/api/notices")
+    @GetMapping("/notices")
     public ResponseEntity<List<Notice>> getNotices() {
         List<Notice> notices = noticeRepository.findAllActiveNotices();
         if (notices != null ) {

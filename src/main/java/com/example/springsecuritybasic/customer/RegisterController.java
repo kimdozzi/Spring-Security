@@ -1,7 +1,5 @@
-package com.example.springsecuritybasic.customer.controller;
+package com.example.springsecuritybasic.customer;
 
-import com.example.springsecuritybasic.customer.domain.Customer;
-import com.example.springsecuritybasic.customer.repository.CustomerRepository;
 import java.time.LocalDateTime;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +21,7 @@ public class RegisterController {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    @PostMapping("/api/register")
+    @PostMapping("/register")
     public ResponseEntity<String> registerUser(@RequestBody Customer customer) {
         Customer savedCustomer = null;
         ResponseEntity response = null;

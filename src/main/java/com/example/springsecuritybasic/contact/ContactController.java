@@ -1,7 +1,5 @@
-package com.example.springsecuritybasic.contact.controller;
+package com.example.springsecuritybasic.contact;
 
-import com.example.springsecuritybasic.contact.domain.Contact;
-import com.example.springsecuritybasic.contact.repository.ContactRepository;
 import java.sql.Date;
 import java.util.Random;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +13,7 @@ public class ContactController {
     @Autowired
     private ContactRepository contactRepository;
 
-    @PostMapping("/api/contact")
+    @PostMapping("/contact")
     public Contact saveContactInquiryDetails(@RequestBody Contact contact) {
         contact.setContactId(getServiceReqNumber());
         contact.setCreateDt(new Date(System.currentTimeMillis()));

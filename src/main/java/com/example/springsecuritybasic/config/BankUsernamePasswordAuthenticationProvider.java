@@ -1,11 +1,12 @@
 package com.example.springsecuritybasic.config;
 
-import com.example.springsecuritybasic.customer.domain.Customer;
-import com.example.springsecuritybasic.customer.repository.CustomerRepository;
+import com.example.springsecuritybasic.customer.Customer;
+import com.example.springsecuritybasic.customer.CustomerRepository;
 import com.example.springsecuritybasic.security.Authority;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

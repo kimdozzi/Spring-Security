@@ -1,6 +1,5 @@
-package com.example.springsecuritybasic.loan.repository;
+package com.example.springsecuritybasic.loan;
 
-import com.example.springsecuritybasic.loan.domain.Loans;
 import java.util.List;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

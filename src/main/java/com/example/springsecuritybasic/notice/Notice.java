@@ -1,4 +1,4 @@
-package com.example.springsecuritybasic.notice.domain;
+package com.example.springsecuritybasic.notice;
 
 import java.sql.Date;
 

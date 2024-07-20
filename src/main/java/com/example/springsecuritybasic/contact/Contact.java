@@ -1,4 +1,4 @@
-package com.example.springsecuritybasic.contact.domain;
+package com.example.springsecuritybasic.contact;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

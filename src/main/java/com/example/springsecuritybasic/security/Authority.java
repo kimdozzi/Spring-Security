@@ -1,6 +1,6 @@
 package com.example.springsecuritybasic.security;
 
-import com.example.springsecuritybasic.customer.domain.Customer;
+import com.example.springsecuritybasic.customer.Customer;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

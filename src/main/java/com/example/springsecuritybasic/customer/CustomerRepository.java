@@ -1,6 +1,5 @@
-package com.example.springsecuritybasic.customer.repository;
+package com.example.springsecuritybasic.customer;
 
-import com.example.springsecuritybasic.customer.domain.Customer;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 
